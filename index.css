@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@900&display=swap');
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root{
+  --dasar: #422f80;
+  --core: #fff;
+}
+body, html{
+  font-family: 'Maven Pro', sans-serif;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  padding:1rem;
+  background: #422f80;
+  color:#fff;
+}
+nav ul li{
+  list-style: none;
+  padding:.5rem;
+}
+nav ul li a{
+  text-decoration: none;
+}
+.burgermenu > ul {
+  display: none;
+  position: absolute;
+}
+.hide{
+  display: none;
+}
+.show{
+  display: block;
+}
+footer >.sosmed > *{
+  font-size: 44px;
+  color:#422f80;
+}
+.sosmed > div > a{
+  color:#422f80;
+}
+.sosmed > *:hover{
+  transform: translateY(-10px);
+}
+
+#burger > ion-icon{
+  color:#fff;
+  font-size: 44px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.25);
+}
+section{
+  padding: 1rem;
+}
+.skill-content{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  align-content: center;
+  gap:1rem;
+}
+.card{
+  padding: .5rem;
+  box-shadow: 0 0 4px rgba(0,0,0,0.25);
+  border-radius: .5rem;
+}
+.title{
+  display: flex;
+  gap:.3rem;
+  font-size: 64px;
+}
+.title > :first-child{
+  color:#2e4694;
+}
+.title > :last-child{
+  color:#576db3;
+}
+.title > :last-child::after{
+  content: "";
+  width:80px;
+  height:40px;
+  background: #cdcb21;
+  position: absolute;
+  transform: translate(-80px, 10px);
+  z-index: -1;
+  box-shadow: 0 0 9px rgba(0,0,0,0.25);
+}
+figure{
+  width: 25%;
+}
+figure.avatar{
+  margin:0 auto;
+}
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 0 0 4px rgba(0,0,0,0.25);
+}
+img.rounded{
+  border-radius: 50%;
+}
+#about > :first-child{
+  text-align: center;
+  margin:0 auto;
+}
+svg{
+  position: absolute;
+  z-index: -1;
+}
+p, .card > .info{
+  color:#422f80;
+}
+#about{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  
+}
+#about > .aboutme{
+  display: inherit;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  padding:2rem;
+}
+.sosmed{
+  display: flex;
+  gap:1rem;
+}
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-content: center;
+  align-items:center;
+  padding:1rem;
+  text-align: center;
+  color:#422f80;
+}
+ul.menulist{
+  position: absolute;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.35);
+  text-align: center;
+  font-size: 33px;
+  
+}
+ul.menulist li a{
+  text-decoration: none;
+  color:var(--core);
+}
+.project-content{
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
+}
+.project-card{
+  display: flex;
+  justify-content:space-between;
+  align-content: center;
+  align-items: center;
+  gap:.5rem;
+}
+.project-card > :first-child{
+  flex-basis: 30%;
+}
+.project-card > :last-child{
+  flex-basis: 70%;
+}
